@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>情绪 on 我的记忆碎片</title>
+    <link>https://nomind2think.github.io/tags/%E6%83%85%E7%BB%AA/</link>
+    <description>Recent content in 情绪 on 我的记忆碎片</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 19 Nov 2025 23:26:42 +0800</lastBuildDate>
+    <atom:link href="https://nomind2think.github.io/tags/%E6%83%85%E7%BB%AA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>今天的心情</title>
+      <link>https://nomind2think.github.io/mood/todays-mood/</link>
+      <pubDate>Tue, 19 Nov 2024 22:10:00 +0800</pubDate>
+      <guid>https://nomind2think.github.io/mood/todays-mood/</guid>
+      <description>记录今天的心情变化</description>
+    </item>
+  </channel>
+</rss>

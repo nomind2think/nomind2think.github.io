@@ -7,12 +7,5 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <atom:link href="https://nomind2think.github.io/mood/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>今天的心情</title>
-      <link>https://nomind2think.github.io/mood/todays-mood/</link>
-      <pubDate>Tue, 19 Nov 2024 22:10:00 +0800</pubDate>
-      <guid>https://nomind2think.github.io/mood/todays-mood/</guid>
-      <description>记录今天的心情变化</description>
-    </item>
   </channel>
 </rss>

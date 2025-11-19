@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>我的记忆碎片</title>
-    <link>https://nomind2think.github.io/</link>
+    <link>https://blog.122281742.xyz/</link>
     <description>Recent content on 我的记忆碎片</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <lastBuildDate>Wed, 19 Nov 2025 23:26:42 +0800</lastBuildDate>
-    <atom:link href="https://nomind2think.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.122281742.xyz/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

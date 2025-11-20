@@ -6,20 +6,20 @@
     <description>Recent content in Weathers on 我的记忆碎片</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 20 Nov 2025 16:59:26 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 20 Nov 2025 17:13:34 +0800</lastBuildDate>
     <atom:link href="/weathers/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>风</title>
-      <link>/weathers/%E9%A3%8E/</link>
+      <title>☀️晴</title>
+      <link>/weathers/%EF%B8%8F%E6%99%B4/</link>
       <pubDate>Thu, 20 Nov 2025 00:07:07 +0800</pubDate>
-      <guid>/weathers/%E9%A3%8E/</guid>
+      <guid>/weathers/%EF%B8%8F%E6%99%B4/</guid>
       <description></description>
     </item>
     <item>
-      <title>晴</title>
-      <link>/weathers/%E6%99%B4/</link>
+      <title>🌪️风</title>
+      <link>/weathers/%EF%B8%8F%E9%A3%8E/</link>
       <pubDate>Thu, 20 Nov 2025 00:07:07 +0800</pubDate>
-      <guid>/weathers/%E6%99%B4/</guid>
+      <guid>/weathers/%EF%B8%8F%E9%A3%8E/</guid>
       <description></description>
     </item>
   </channel>

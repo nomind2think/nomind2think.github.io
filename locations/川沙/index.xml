@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>日记 on 我的记忆碎片</title>
-    <link>/categories/%E6%97%A5%E8%AE%B0/</link>
-    <description>Recent content in 日记 on 我的记忆碎片</description>
+    <title>川沙 on 我的记忆碎片</title>
+    <link>/locations/%E5%B7%9D%E6%B2%99/</link>
+    <description>Recent content in 川沙 on 我的记忆碎片</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <lastBuildDate>Fri, 21 Nov 2025 22:19:52 +0800</lastBuildDate>
-    <atom:link href="/categories/%E6%97%A5%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/locations/%E5%B7%9D%E6%B2%99/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2025 11 21</title>
       <link>/diary/2025-11-21/</link>
@@ -44,29 +44,6 @@
 最近熙哥也没打dota，我自己打了两把还不错。
 熙哥还说要寄硬盘过来，还突然来了一句算是生日礼物。
 感觉他可能和台湾人聊了一下，熙哥不可能记得住这种东西，我都没记住。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>2025 11 20 01</title>
-      <link>/diary/2025-11-20-01/</link>
-      <pubDate>Thu, 20 Nov 2025 16:40:30 +0800</pubDate>
-      <guid>/diary/2025-11-20-01/</guid>
-      <description>&lt;h2 id=&#34;今日记录&#34;&gt;今日记录&lt;/h2&gt;
-&lt;p&gt;今天上午摸了半天的鱼，下午开了个需求会问题分析。然后去吃了根烤肠。
-开会开得有点累，头昏脑胀。
-眼睛最近酸胀的厉害，出去买东西吃的时候感觉很多东西都看不清了。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>2025 11 20</title>
-      <link>/diary/2025-11-20/</link>
-      <pubDate>Thu, 20 Nov 2025 00:07:07 +0800</pubDate>
-      <guid>/diary/2025-11-20/</guid>
-      <description>&lt;h2 id=&#34;今日记录&#34;&gt;今日记录&lt;/h2&gt;
-&lt;p&gt;今天和蟹老板去吃了鱼籽鱼泡，这一次也是心血来潮。
-昨晚蟹老板和初恋的电话，以及今天发生了一些事情。
-蟹老板还是有些愧疚。
-今天鱼籽鱼泡吃的还不错&lt;/p&gt;
-&lt;h2 id=&#34;感想&#34;&gt;感想&lt;/h2&gt;
-&lt;p&gt;&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

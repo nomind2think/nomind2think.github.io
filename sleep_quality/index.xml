@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sleep_quality on 我的记忆碎片</title>
+    <link>/sleep_quality/</link>
+    <description>Recent content in Sleep_quality on 我的记忆碎片</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>zh</language>
+    <lastBuildDate>Tue, 25 Nov 2025 23:11:24 +0800</lastBuildDate>
+    <atom:link href="/sleep_quality/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>😴正常</title>
+      <link>/sleep_quality/%E6%AD%A3%E5%B8%B8/</link>
+      <pubDate>Tue, 25 Nov 2025 08:00:00 +0800</pubDate>
+      <guid>/sleep_quality/%E6%AD%A3%E5%B8%B8/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

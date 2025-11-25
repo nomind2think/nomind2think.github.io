@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/dream_time/%E6%B8%85%E6%99%A8/</loc>
+    <lastmod>2025-11-25T23:11:24+08:00</lastmod>
+  </url><url>
+    <loc>/clarity/%E6%B8%85%E6%99%B0/</loc>
+    <lastmod>2025-11-25T23:11:24+08:00</lastmod>
+  </url><url>
+    <loc>/types/%E6%97%A5%E5%B8%B8/</loc>
+    <lastmod>2025-11-25T23:11:24+08:00</lastmod>
+  </url><url>
+    <loc>/sleep_quality/%E6%AD%A3%E5%B8%B8/</loc>
+    <lastmod>2025-11-25T23:11:24+08:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+    <lastmod>2025-11-25T23:11:24+08:00</lastmod>
+  </url><url>
+    <loc>/clarity/</loc>
+    <lastmod>2025-11-25T23:11:24+08:00</lastmod>
+  </url><url>
+    <loc>/dream_time/</loc>
+    <lastmod>2025-11-25T23:11:24+08:00</lastmod>
+  </url><url>
+    <loc>/moods/</loc>
+    <lastmod>2025-11-25T23:11:24+08:00</lastmod>
+  </url><url>
+    <loc>/sleep_quality/</loc>
+    <lastmod>2025-11-25T23:11:24+08:00</lastmod>
+  </url><url>
+    <loc>/types/</loc>
+    <lastmod>2025-11-25T23:11:24+08:00</lastmod>
+  </url><url>
+    <loc>/moods/%E5%A5%87%E5%BC%82/</loc>
+    <lastmod>2025-11-25T23:11:24+08:00</lastmod>
+  </url><url>
+    <loc>/dream/2025-11-25/</loc>
+    <lastmod>2025-11-25T23:11:24+08:00</lastmod>
+  </url><url>
+    <loc>/categories/%E6%A2%A6%E5%A2%83/</loc>
+    <lastmod>2025-11-25T23:11:24+08:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2025-11-25T23:16:55+08:00</lastmod>
+  </url><url>
     <loc>/weathers/%EF%B8%8F%E9%98%B4/</loc>
     <lastmod>2025-11-24T23:28:48+08:00</lastmod>
   </url><url>
@@ -11,13 +53,7 @@
     <loc>/diary/2025-11-24/</loc>
     <lastmod>2025-11-24T23:28:48+08:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2025-11-24T23:28:48+08:00</lastmod>
-  </url><url>
     <loc>/locations/</loc>
-    <lastmod>2025-11-24T23:28:48+08:00</lastmod>
-  </url><url>
-    <loc>/moods/</loc>
     <lastmod>2025-11-24T23:28:48+08:00</lastmod>
   </url><url>
     <loc>/weathers/</loc>
@@ -28,9 +64,6 @@
   </url><url>
     <loc>/categories/%E6%97%A5%E8%AE%B0/</loc>
     <lastmod>2025-11-24T23:28:48+08:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2025-11-25T22:44:00+08:00</lastmod>
   </url><url>
     <loc>/weathers/%EF%B8%8F%E6%99%B4/</loc>
     <lastmod>2025-11-23T22:27:14+08:00</lastmod>
@@ -82,7 +115,7 @@
     <lastmod>2025-11-19T23:26:42+08:00</lastmod>
   </url><url>
     <loc>/dream/</loc>
-    <lastmod>2025-11-25T22:44:00+08:00</lastmod>
+    <lastmod>2025-11-25T23:11:24+08:00</lastmod>
   </url><url>
     <loc>/diary/</loc>
     <lastmod>2025-11-19T23:26:42+08:00</lastmod>

@@ -6,8 +6,15 @@
     <description>Recent content in Moods on 我的记忆碎片</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 25 Nov 2025 23:11:24 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 30 Nov 2025 21:44:23 +0800</lastBuildDate>
     <atom:link href="/moods/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>😌平静</title>
+      <link>/moods/%E5%B9%B3%E9%9D%99/</link>
+      <pubDate>Tue, 25 Nov 2025 23:21:08 +0800</pubDate>
+      <guid>/moods/%E5%B9%B3%E9%9D%99/</guid>
+      <description></description>
+    </item>
     <item>
       <title>🤔奇异</title>
       <link>/moods/%E5%A5%87%E5%BC%82/</link>
@@ -41,13 +48,6 @@
       <link>/moods/%E7%96%B2%E6%83%AB/</link>
       <pubDate>Fri, 21 Nov 2025 21:54:58 +0800</pubDate>
       <guid>/moods/%E7%96%B2%E6%83%AB/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>😌平静</title>
-      <link>/moods/%E5%B9%B3%E9%9D%99/</link>
-      <pubDate>Thu, 20 Nov 2025 00:07:07 +0800</pubDate>
-      <guid>/moods/%E5%B9%B3%E9%9D%99/</guid>
       <description></description>
     </item>
   </channel>

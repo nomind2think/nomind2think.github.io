@@ -1,235 +1,81 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENCRYPTED_MSG_TITLE</title>
-    <meta name="robots" content="noindex, nofollow">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .container {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 24px;
-            padding: 48px 40px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            max-width: 420px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .icon {
-            font-size: 56px;
-            margin-bottom: 24px;
-            animation: float 3s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
-        h1 {
-            color: #2d3748;
-            font-size: 28px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-
-        .subtitle {
-            color: #718096;
-            font-size: 15px;
-            margin-bottom: 32px;
-            line-height: 1.6;
-        }
-
-        .input-group {
-            position: relative;
-            margin-bottom: 24px;
-        }
-
-        input[type="password"] {
-            width: 100%;
-            padding: 16px 20px;
-            font-size: 16px;
-            border: 2px solid #e2e8f0;
-            border-radius: 12px;
-            outline: none;
-            transition: all 0.3s ease;
-            background: #f7fafc;
-        }
-
-        input[type="password"]:focus {
-            border-color: #667eea;
-            background: white;
-            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
-        }
-
-        input[type="password"]::placeholder {
-            color: #a0aec0;
-        }
-
-        .remember-group {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 24px;
-            font-size: 14px;
-            color: #718096;
-        }
-
-        .remember-group input[type="checkbox"] {
-            margin-right: 8px;
-            cursor: pointer;
-        }
-
-        button {
-            width: 100%;
-            padding: 16px;
-            font-size: 16px;
-            font-weight: 600;
-            color: white;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border: none;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-        }
-
-        button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
-        }
-
-        button:active {
-            transform: translateY(0);
-        }
-
-        .error {
-            color: #e53e3e;
-            font-size: 14px;
-            margin-top: 16px;
-            display: none;
-            animation: shake 0.5s;
-        }
-
-        @keyframes shake {
-            0%, 100% { transform: translateX(0); }
-            25% { transform: translateX(-10px); }
-            75% { transform: translateX(10px); }
-        }
-
-        .footer {
-            margin-top: 32px;
-            font-size: 13px;
-            color: #a0aec0;
-        }
-
-        /* 暗色模式 */
-        @media (prefers-color-scheme: dark) {
-            body {
-                background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
-            }
-
-            .container {
-                background: rgba(45, 55, 72, 0.95);
-            }
-
-            h1 {
-                color: #f7fafc;
-            }
-
-            .subtitle {
-                color: #cbd5e0;
-            }
-
-            input[type="password"] {
-                background: #2d3748;
-                border-color: #4a5568;
-                color: #f7fafc;
-            }
-
-            input[type="password"]:focus {
-                background: #374151;
-                border-color: #667eea;
-            }
-
-            .remember-group {
-                color: #cbd5e0;
-            }
-
-            .footer {
-                color: #718096;
-            }
-        }
-
-        /* 移动端优化 */
-        @media (max-width: 480px) {
-            .container {
-                padding: 36px 24px;
-            }
-
-            h1 {
-                font-size: 24px;
-            }
-
-            .icon {
-                font-size: 48px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="icon">🔒</div>
-        <h1>ENCRYPTED_MSG_TITLE</h1>
-        <p class="subtitle">ENCRYPTED_MSG_INSTRUCTIONS</p>
-
-        <form id="decrypt-form">
-            <div class="input-group">
-                <input
-                    type="password"
-                    id="password-input"
-                    placeholder="ENCRYPTED_MSG_PLACEHOLDER"
-                    autocomplete="off"
-                    autofocus
-                />
-            </div>
-
-            <label class="remember-group">
-                <input type="checkbox" id="remember-checkbox" />
-                <span>ENCRYPTED_MSG_REMEMBER</span>
-            </label>
-
-            <button type="submit">ENCRYPTED_MSG_DECRYPT_BUTTON</button>
-
-            <div class="error" id="error-message">
-                ❌ 密码错误，请重试
-            </div>
-        </form>
-
-        <div class="footer">
-            🛡️ 内容已加密保护
-        </div>
-    </div>
-
-    STATICRYPT_CONFIG
-    STATICRYPT_DECRYPT_SCRIPT
-</body>
-</html>
+<!doctype html><html lang=zh dir=auto data-theme=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>川沙 | 我的记忆碎片</title><meta name=keywords content><meta name=description content="记录生活、思考和成长的个人空间"><meta name=author content="nomind"><link rel=canonical href=/locations/%E5%B7%9D%E6%B2%99/><link crossorigin=anonymous href=/assets/css/stylesheet.0422c64f9e2a74f84a7530049e39410acf0177d0e70ef01f7f2f8368a70d0e61.css integrity="sha256-BCLGT54qdPhKdTAEnjlBCs8Bd9DnDvAffy+DaKcNDmE=" rel="preload stylesheet" as=style><link rel=icon href=/favicon.ico><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=apple-touch-icon href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=/locations/%E5%B7%9D%E6%B2%99/index.xml title=rss><link rel=alternate hreflang=zh href=/locations/%E5%B7%9D%E6%B2%99/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}@media(prefers-color-scheme:light){.list::-webkit-scrollbar-thumb{border-color:var(--code-bg)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><meta property="og:url" content="/locations/%E5%B7%9D%E6%B2%99/"><meta property="og:site_name" content="我的记忆碎片"><meta property="og:title" content="川沙"><meta property="og:description" content="记录生活、思考和成长的个人空间"><meta property="og:locale" content="zh"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="川沙"><meta name=twitter:description content="记录生活、思考和成长的个人空间"></head><body class=list id=top><header class=header><nav class=nav><div class=logo><a href=/ accesskey=h title="首页 (Alt + H)"><img src=/apple-touch-icon.png alt aria-label=logo height=35>首页</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
+<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=/diary/ title=日记><span>日记</span></a></li><li><a href=/mood/ title=心情><span>心情</span></a></li><li><a href=/essay/ title=随笔><span>随笔</span></a></li><li><a href=/murmur/ title=碎碎念><span>碎碎念</span></a></li><li><a href=/dream/ title=梦境><span>梦境</span></a></li><li><a href=/archives/ title=归档><span>归档</span></a></li><li><a href=/search/ title="搜索 (Alt + /)" accesskey=/><span>搜索</span></a></li><li><a href=/tags/ title=标签><span>标签</span></a></li><li><a href=/moods/ title=心情筛选><span>心情筛选</span></a></li><li><a href=/weathers/ title=天气筛选><span>天气筛选</span></a></li><li><a href=/locations/ title=地点筛选><span>地点筛选</span></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=/>主页</a>&nbsp;»&nbsp;<a href=/locations/>Locations</a></div><h1>川沙
+<a href=/locations/%E5%B7%9D%E6%B2%99/index.xml title=RSS aria-label=RSS><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" height="23"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a></h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>2025 12 15</h2></header><div class=entry-content><p>今日记录 今天天气好冷，风也好大，办公室的空调跟制冷一样，以前会闷热的闷闷的呼吸都难受，今天有点凉爽得穿棉袄。
+一个发小订婚了，发去了恭喜消息。国庆还回去跟他学做牛肉串，那时候还有点吵闹来着。
+今晚吃了泗泾的鸭货，因为蟹老板去泗泾找一个妹子。
+今天弄动态数据源下午出了一点问题，属于是动态的动态的，二维有点繁琐了。
+现在肚子撑的又一点儿难受。
+吃完吃后看了刺杀小说家2，然后打了一把dota。 碰到了一个笨蛋剑圣，玩个中单，一直打钱，参战最低。 上又不敢上跟个懦夫一样，带个盾就中🪝送。 斧王也憨憨的，原地跳吼。但是很莽，还是喜欢莽莽的。比较热血。
+真不知道咋玩。 哎。 一群猪头。 直接拉黑举报！我的plus不能白开。 最近想看看撸毛和聪明钱包，有机会再看吧。 有点无聊了，还是chalice有点意思，洗澡看看直播吧。
+...</p></div><footer class=entry-footer><span title='2025-12-15 22:48:56 +0800 +0800'>2025年12月15日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>363 字</span>&nbsp;·&nbsp;<span>nomind</span></footer><a class=entry-link aria-label="post link to 2025 12 15" href=/diary/2025-12-15/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>2025 12 10</h2></header><div class=entry-content><p>今日记录 好几天没有记录了，天天想着上班和怎么赚钱。 今天是生日还是要记录一下滴。 今天正常上吧，我差不多二十左右到。 一个同事可能快迟到了才到，说老板说他了。 我以前也被说过，所以我都是卡前半个小时到，虽然是弹性。 因为有一些白嫖ai和梯子的渠道，我之前都是给key和给链接。 这次他找我要论坛了，我直接给了。 但是心理有一点说不出的感觉，找ai开解了一下，人之常情。 大概就是之前给key是因为自己key足够多给一个还不错，从授人以鱼到授人以渔。 是会有一点落差的。 不过现在好多了。 今天喝了两杯咖啡上午一杯下午一杯，因为问了ai和咖啡对身体有没有坏处，结果是利大于弊于是喝的很自然了。
+昨天和今天中午一样都吃的麦当劳，中午我和他都没有怎么睡着于是下午买了瑞幸。
+下午付老师来还过来了，老板和测试依然讨论不休，有时候和同事吐槽一下测试测理解力和发散力。
+下午的时候眼睛突然很不舒服，于是下去呆了两分钟，然后用热水敷了十几下。
+现在稍微好一点了。
+这个用schema区分的需求还是比较复杂的，以及组织架构和空间绑定的需求。
+最近在地铁上坚持不看手机看人了，以及看别人手机。大多数时间还是闭眼睛。
+晚上回来去吃了早上就打算好的，甚至是昨天就打算好的武汉锅子。
+和蟹老板吃了三腊火锅，腊鸡腊鸭腊排骨。
+还有牛肉串五花肉淀粉肠，鱼糕鱼丸藕丸肉丸。老板说是四个手工丸子，我说不是不要牛肉丸是鱼糕。
+老板说是的没错知道的。
+吃的时候下单了本来就打算买的dota周边小全套，估计3d打印机也能做。
+一共15件399，我就下单了。西西弗兮，排名壹。头像也发了。
+送我一个盾，老板给的是绿色的，我说能不能红色的 ti6.
+老板也同意了，我还是比较喜欢ti6.那天我迷迷糊糊的睡到早上。在家里的电脑房。
+我还记得。
+老板说盾是给朋友的，我怕他头像名字没改我还跟他说了一下。
+然后还说了我的排名是繁体字的一。
+估计老板都有一点不耐烦了。但没办法我是客户～
+我也纠结了好久，在地铁上就在纠结。
+然后想到自己带着的耳机，这么贵重的物品，我之前在广州都是属于羡慕别人的那种，自己不会买。
+好像都是因为来了上海我才买的，二手的mbp，耳机都有两个了。还有投影仪mac mini。
+在这之前我似乎都没有买过什么贵重的物品。也舍不得。
+现在买个几百块的东西还是这么纠结，不管了，避免欲买桂花同载酒，终不似少年游。
+我就下单了。
+这么想来贵重物品似乎都是在上海买的，刚毕业的笔记本7000也是在上海。甚至手机都是快离开广州了才买的。
+我居然这么节俭，哦不对我还充值了一个盾。妈的基金亏的和广州黑老板拖欠的都不止这么一点了。
+在上海买东西花的都比这个少。
+还是挺感谢上家公司的虽然后来没有那么好了。
+武汉锅子吃饭吃了240.
+回来之后打电话给妈妈，妈妈没接，就打给爸爸我们说了两句。
+他说高了标杆子鱼炸了准备蒸着吃，现在在看电视。妈妈去上班了。
+微信打给妈妈不接，于是电话接了。
+还有一点有意思的是她的微信步数在9431就不走了。
+原来是妈妈在休息了。
+今天算是差不多就这样啦～
+...</p></div><footer class=entry-footer><span title='2025-12-10 21:31:50 +0800 +0800'>2025年12月10日</span>&nbsp;·&nbsp;<span>3 分钟</span>&nbsp;·&nbsp;<span>1311 字</span>&nbsp;·&nbsp;<span>nomind</span></footer><a class=entry-link aria-label="post link to 2025 12 10" href=/diary/2025-12-10/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>2025 11 21</h2></header><div class=entry-content><p>今日记录 今天上午醒的很早，看了一下btc跌到了8.6,没想太多就做了一单多。
+因为最近还在做ai提醒，配合mcp分析以及notify。还问了一下ai，ai说可以多，止盈在8.8。
+但是只注意了是一个做多的点按照了止损84800，但是没有按照止盈，想着昨天卖飞了，今天拿住。
+后来震荡了一会我没管就继续睡去了。
+醒来之后果然过了8.8然后就跌了，然后就再也没起来，后来我止损了。
+本来还能正的，但是想着不能卖飞。
+最近还是有一点匹配，尤其是眼睛。
+上午起来刷了一会儿抖音，去上班了。
+今天其实没做什么，但就是很累。
+想想这周弄了什么，修了一点bug，做了一点企业版的需求，以及开会。
+然后设计。
+自己的话买了一个域名十年，准备写点日志。
+算是留在这个世界上的东西，没办法刻在石头上了。
+然后就弄了一个ai分析k线，目前看起来还是挺准的。因为上午那一单，以及晚上还提示了一单82400-82600做多，但是我没有做。
+因为已经82600+了，结果现在已经84000了，这也是他看中的第一个点83800，下一个是85000.
+另外就是上班路上的有一个阿炳包子铺，拉出了横幅，打五折。
+这周一我没吃，但是周二开始就天天买了，包子酱香饼，以及茶叶蛋烧卖都还是不错的。
+昨天我还买多了，有俩包子没吃完带回来了，但是蟹老板不喜欢吃。
+还有就是昨天晚上，老板从江西寄过来了很多橘子，真的好多好多，冰箱最大的篮子都塞满了但是还是没塞完。
+这周昨天跟老板娘聊天，老板被工作搞得有点烦。于是昨天我们开会整理了一下。
+说是老板其实和同事朋友差不多。
+最近眼睛好酸好难受。
+而且有时候手还会发抖。
+坐地铁的时候很难受，感觉整个人都喘不过气，在外面吹风倒是感觉好很多。
+今天中午吃的包子，晚上去包子店吃了面条。
+晚上回来吃了蟹老板的牛杂锅，如果明天不知道吃什么就准备去吃红太阳鱼杂了。
+周末好好休息吧。
+最近熙哥也没打dota，我自己打了两把还不错。
+熙哥还说要寄硬盘过来，还突然来了一句算是生日礼物。
+感觉他可能和台湾人聊了一下，熙哥不可能记得住这种东西，我都没记住。
+...</p></div><footer class=entry-footer><span title='2025-11-21 21:54:58 +0800 +0800'>2025年11月21日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>869 字</span>&nbsp;·&nbsp;<span>nomind</span></footer><a class=entry-link aria-label="post link to 2025 11 21" href=/diary/2025-11-21/></a></article></main><footer class=footer><span>&copy; 2025 <a href=/>我的记忆碎片</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script></body></html>
